@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@200;400&family=Roboto&display=swap");
+
+body {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+}
+/* menü css */
+html {
+  scroll-behavior: smooth !important;
+}
+header {
+  z-index: 100000;
+  position: fixed;
+  width: 100%;
+  transition: 300ms ease-in;
+}
+header.sticky {
+  padding: 5px 20px;
+  background-color: #6555c6;
+
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+nav a {
+  margin-left: 10%;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+nav h2 {
+  color: black;
+}
+.nav-menu {
+  flex: 1;
+}
+.nav-list {
+  display: flex;
+  margin-right: 10%;
+  justify-content: end;
+  list-style-type: none;
+}
+.nav-list li {
+  display: flex;
+  margin-left: 5%;
+}
+.nav-list li a {
+  color: black;
+  transition: 300ms ease-in;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+nav ul li:hover a {
+  color: #6555c6;
+}
+.nav-logo h2 {
+  transition: 300ms ease-in;
+}
+
+.nav-logo h2:hover {
+  color: #6555c6;
+}
+/* menü css */
+/* main kısmı */
+
+.main {
+  width: 90%;
+  height: 94vh;
+  margin: auto;
+  display: flex;
+
+  align-items: center;
+}
+.main-left {
+  width: 10%;
+  height: 60%;
+  display: flex;
+  position: fixed;
+  transition: 300ms ease-in;
+  box-sizing: border-box;
+  z-index: 10000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-right {
+  width: 70%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-linkedin {
+  margin-bottom: 10%;
+  font-size: 35px;
+
+  color: #6555c6;
+  transition: 300ms ease-in;
+}
+.fa-instagram {
+  margin-top: 10%;
+  font-size: 35px;
+  cursor: pointer;
+  color: #6555c6;
+  transition: 300ms ease-in;
+}
+.fa-instagram:hover {
+  transform: scale(1.15);
+}
+.fa-linkedin:hover {
+  transform: scale(1.15);
+}
+.fa-github {
+  color: #6555c6;
+  font-size: 35px;
+  transition: 300ms ease-in;
+}
+.fa-github:hover {
+  transform: scale(1.15);
+}
+.fa-computer-mouse {
+  font-size: 35px;
+  padding-top: 5%;
+
+  color: #6555c6;
+}
+.scroll-i {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 18%;
+  width: 10%;
+
+  transition: 500ms ease-in;
+}
+.fa-down-long {
+  padding-top: 10%;
+  margin-left: 2%;
+  font-size: 25px;
+
+  color: #6555c6;
+}
+.hidden {
+  opacity: 0;
+}
+.mouse-yazi {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-left: 5%;
+}
+.main-right-yazi {
+  padding-top: 15%;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+}
+.main-right-yazi h1 {
+  font-size: 50px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.main-right-yazi h2 {
+  font-size: 35px;
+  color: gray;
+  margin-top: -5%;
+  font-family: "Poppins", sans-serif;
+}
+.main-right-yazi p {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-right: 1%;
+}
+.main-right-yazi button {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  width: 20%;
+  height: 8%;
+  border: 0;
+  border-radius: 50px;
+  background-color: #6555c6;
+  transition: 300ms ease-in;
+  text-align: center;
+  cursor: pointer;
+}
+.main-right-yazi button a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+.main-right-yazi button:hover {
+  transform: scale(1.02);
+  background-color: white;
+  border: 2px solid #6555c6;
+}
+.main-right-yazi button:hover a {
+  color: black;
+}
+
+.main-right-kutu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-right-resim {
+  width: 100%;
+  height: 60%;
+  z-index: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-blob {
+  animation: shake2 4s linear infinite;
+  width: 80%;
+  z-index: 100px;
+  transition: 300ms ease-in;
+}
+
+.main-img {
+  width: 100%;
+}
+.splash {
+  animation: shake 4s linear infinite;
+  width: 50%;
+  bottom: 28%;
+  right: 8%;
+  transition: 300ms ease-in;
+  position: absolute;
+  z-index: -1;
+}
+.splash img {
+  box-shadow: 5px 7px 23px 0px rgba(0, 0, 0, 0.75);
+}
+@keyframes shake {
+  50% {
+    transform: translateY(-4%);
+  }
+}
+@keyframes shake2 {
+  50% {
+    transform: translatex(1%);
+  }
+}
+/* main kısmı */
+
+/* about kısmı */
+.about {
+  filter: blur(5px);
+  width: 90%;
+  color: black;
+  height: 85vh;
+  display: flex;
+  margin: auto;
+  transition: 450ms ease-in;
+  opacity: 0;
+  transform: translateY(50px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-başlık {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-main {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about-resim {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.about-resim img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+.about-yazi {
+  width: 50%;
+  height: 100%;
+}
+.about-yazi p {
+  margin-top: 18%;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-left: 2%;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+}
+.about-detay {
+  width: 100%;
+  height: 20%;
+  margin: auto;
+}
+.about-detay-yazi {
+  display: flex;
+  color: gray;
+  transition: 300ms ease-in;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+}
+.about-detay2 {
+  display: flex;
+
+  margin-top: -8%;
+  margin-left: 4%;
+
+  font-family: "Poppins", sans-serif;
+  justify-content: space-around;
+}
+.booble {
+  position: absolute;
+  z-index: -100;
+  width: 10%;
+  top: 15%;
+  left: 15%;
+
+  filter: drop-shadow(0px 0px 5px #000);
+  animation: shake3 5s linear infinite;
+}
+
+.booble2 {
+  position: absolute;
+  z-index: -100;
+  width: 20%;
+  top: 50%;
+  left: -10%;
+  filter: drop-shadow(0px 0px 5px #000);
+  animation: shake3 5s linear infinite;
+}
+@keyframes shake3 {
+  50% {
+    transform: translateY(10%);
+  }
+}
+
+@media only screen and (max-width: 571px) {
+  .splash {
+    bottom: 45%;
+    right: 8%;
+  }
+}
+/*
+@media only screen and (max-width: 710px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-right {
+    flex-wrap: wrap;
+  }
+  .splash {
+    display: none;
+  }
+  .main-right-kutu {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .main-right-resim {
+    margin-top: -150%;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50%;
+  }
+} */
+/* about kısmı */
+
+/* Skills kısmı */
+.skils-box {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 300ms ease-in;
+  filter: blur(5px);
+}
+
+.skils {
+  width: 90%;
+  height: 65vh;
+
+  box-sizing: border-box;
+
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+.box {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+
+  margin-left: 2%;
+}
+.box-in {
+  display: flex;
+  width: 50%;
+
+  height: 20%;
+  align-items: center;
+  padding-left: 2%;
+
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+.box-in h3 {
+  margin-top: -10%;
+  color: rgb(167, 167, 167);
+}
+.box-in-text {
+  margin-left: 4%;
+}
+.box-in-text h3 {
+  margin-top: 1%;
+}
+
+.fa-chevron-down {
+  font-size: 30px;
+
+  cursor: pointer;
+  color: #6555c6;
+  transition: 300ms ease-in;
+}
+.fa-chevron-down2 {
+  font-size: 30px;
+
+  cursor: pointer;
+  color: #6555c6;
+  transition: 300ms ease-in;
+}
+.fa-pen {
+  font-size: 35px;
+  color: #6555c6;
+  transition: 300ms ease-in;
+}
+.fa-code {
+  font-size: 35px;
+  color: #6555c6;
+  transition: 300ms ease-in;
+}
+
+.progres {
+  position: relative;
+  width: 80%;
+  height: 1%;
+  margin-top: 5%;
+  border-radius: 50px;
+  background-color: rgba(224, 203, 241, 0.582);
+}
+
+.progres::before {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  bottom: 0.5em;
+  width: 85%;
+  height: 100%;
+  background-color: #6555c6;
+  border-radius: 1em;
+}
+.progres::after {
+  content: "90%";
+  display: flex;
+
+  font-family: "Poppins", sans-serif;
+  justify-content: end;
+}
+.progres2 {
+  position: relative;
+  width: 80%;
+  height: 1%;
+  margin-top: 5%;
+  border-radius: 50px;
+  background-color: rgba(224, 203, 241, 0.582);
+}
+
+.progres2::before {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  bottom: 0.5em;
+  width: 60%;
+  height: 100%;
+  background-color: #6555c6;
+  border-radius: 1em;
+}
+.progres2::after {
+  content: "60%";
+  display: flex;
+
+  font-family: "Poppins", sans-serif;
+  justify-content: end;
+}
+.close-skils {
+  opacity: 1;
+
+  display: block;
+}
+
+.box-2 {
+  width: 100%;
+  height: 100%;
+}
+.html-text {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+}
+.hidden {
+  opacity: 0;
+}
+.none {
+  opacity: 0;
+}
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(0px);
+}
+/* Skills kısmı */
+.contact {
+  background-color: #6555c6;
+  width: 100%;
+  transition: 300ms ease-in;
+  opacity: 0;
+  height: 100%;
+  margin-bottom: -2%;
+  filter: blur(8px);
+  transform: translateY(30px);
+}
+.contact-box {
+  width: 100%;
+  height: 85%;
+  display: flex;
+
+  justify-content: center;
+}
+.contact-box1 {
+  width: 25%;
+  padding-top: 1%;
+  height: 100%;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  color: #ebe8ee;
+}
+.contact-box1 h3 {
+  margin-top: -3%;
+  margin-left: 5%;
+}
+.contact-cop {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.contact-box2 {
+  width: 25%;
+  height: 100%;
+
+  box-sizing: border-box;
+}
+.contact-box2 i {
+  color: #ebe8ee;
+
+  margin-left: 20%;
+}
+
+.contact-box3 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-box3 form {
+  margin-top: -10%;
+  color: #ebe8ee;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-box3 input {
+  background-color: rgb(224, 224, 224);
+}
+.contact-box3 form button {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  width: 60%;
+  height: 3vh;
+  border: 0;
+
+  background-color: #ebe8ee;
+
+  text-align: center;
+  cursor: pointer;
+}
+.active {
+  filter: blur(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1185px) {
+  .splash {
+    bottom: 40%;
+    right: 8%;
+  }
+  .scroll-i {
+    display: none;
+  }
+  .about-detay2 {
+    margin-left: 15%;
+  }
+  .contact-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-box1 {
+    width: 100%;
+  }
+  .contact-box2 {
+    width: 100%;
+    margin-left: 10%;
+  }
+  .contact-box1 h3 {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .main-right-yazi button {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .main-right-kutu {
+    display: none;
+  }
+  .main-right {
+    flex-wrap: wrap;
+  }
+  .main-right-yazi {
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+  .main-right-yazi h1 {
+    font-size: 45px;
+  }
+  .main-right-yazi button {
+    width: 80%;
+  }
+  .box-in {
+    width: 100%;
+  }
+  .skils-box {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 641px) {
+  .about {
+    margin-bottom: 20%;
+  }
+  .about-detay {
+    display: none;
+  }
+  .about-yazi {
+    text-align: center;
+  }
+  .about-detay2 {
+    display: none;
+  }
+  .box-in {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .box-in-text h3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    margin-bottom: 10%;
+  }
+  .main button {
+    width: 100%;
+  }
+  .about-yazi {
+    flex-wrap: wrap;
+  }
+  .about-detay {
+    display: none;
+  }
+  .about-detay2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .about {
+    height: 100%;
+  }
+  .main {
+    height: 98%;
+  }
+  header {
+    font-size: 12px;
+  }
+}
