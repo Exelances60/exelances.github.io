@@ -9,6 +9,7 @@ const btnSkils = document.querySelector(".fa-chevron-down");
 const btnSkils2 = document.querySelector(".openbtn");
 const close2 = document.querySelector(".close2");
 const contact = document.querySelector(".contact");
+const skils = document.querySelector(".skils");
 const projectMain = document.querySelector(".project");
 const project = document.querySelectorAll(".project-box");
 const overlay = document.querySelectorAll(".overlay");
@@ -32,9 +33,19 @@ let typed = new Typed(".type", {
 function openSkills() {
   btnSkils.addEventListener("click", function () {
     closeSkils.classList.toggle("none");
+    if (closeSkils.classList.contains("none")) {
+      skils.style.height = "50vh";
+    } else {
+      skils.style.height = "65vh";
+    }
   });
   btnSkils2.addEventListener("click", function () {
     close2.classList.toggle("none");
+    if (close2.classList.contains("none")) {
+      skils.style.height = "50vh";
+    } else {
+      skils.style.height = "65vh";
+    }
   });
 }
 openSkills();
@@ -50,6 +61,7 @@ scrollActive(scrollArrow, "hidden", 30);
 scrollActive(mainleft, "hidden", 1200);
 scrollActive(contact, "active", 1500);
 scrollActive(skilsBox, "active", 1000);
+
 // Yumuşak scroll etme bütün tarayıcılarda çalışması için
 $(document).ready(function () {
   $("a").on("click", function (event) {
@@ -77,4 +89,3 @@ project.forEach((page, i) => {
     overlay[i].classList.remove("active");
   });
 });
-

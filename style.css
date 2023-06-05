@@ -405,14 +405,12 @@ nav ul li:hover a {
 
 .skils {
   width: 90%;
-  height: 65vh;
-
+  height: 50vh;
+  transition: 250ms ease-in;
   box-sizing: border-box;
-
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
 }
 .box {
@@ -420,19 +418,15 @@ nav ul li:hover a {
   height: 90%;
   display: flex;
   justify-content: center;
-
   margin-left: 2%;
 }
 .box-in {
   display: flex;
   width: 50%;
-
   height: 20%;
   align-items: center;
   padding-left: 2%;
-
   font-family: "Poppins", sans-serif;
-  background-color: rgb(255, 255, 255);
 }
 .box-in h3 {
   margin-top: -10%;
@@ -528,7 +522,7 @@ nav ul li:hover a {
 }
 .close-skils {
   opacity: 1;
-
+  transition: 300ms ease-in;
   display: block;
 }
 
@@ -731,6 +725,8 @@ nav ul li:hover a {
     width: 100%;
   }
   .skils-box {
+    margin-bottom: 10%;
+    flex-wrap: wrap;
     height: auto;
   }
 }
