@@ -9,6 +9,9 @@ const btnSkils = document.querySelector(".fa-chevron-down");
 const btnSkils2 = document.querySelector(".openbtn");
 const close2 = document.querySelector(".close2");
 const contact = document.querySelector(".contact");
+const projectMain = document.querySelector(".project");
+const project = document.querySelectorAll(".project-box");
+const overlay = document.querySelectorAll(".overlay");
 // Yazı silip yazma kodu
 let typed = new Typed(".type", {
   strings: ["Enes", "Ögrenci", "Coder"],
@@ -66,3 +69,12 @@ $(document).ready(function () {
     }
   });
 });
+project.forEach((page, i) => {
+  project[i].addEventListener("mouseover", function () {
+    overlay[i].classList.add("active");
+  });
+  project[i].addEventListener("mouseout", function () {
+    overlay[i].classList.remove("active");
+  });
+});
+
